@@ -1,0 +1,21 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+
+langgraph==0.2.34
+# langchain-core is intentionally left unpinned: langgraph, langchain-anthropic,
+# and langchain-groq each require a different minimum version, and pinning one
+# exact version here breaks pip's resolver. Let pip pick a version satisfying
+# all of them (verified to resolve cleanly to langchain-core==0.3.86).
+
+# Pick the provider(s) you'll use (see .env.example -> LLM_PROVIDER).
+# All three are LangChain chat-model wrappers with the same .invoke()/.bind_tools()
+# interface, so app/llm_provider.py can swap between them with no other code changes.
+langchain-anthropic==0.2.3      # paid, most reliable tool-calling/JSON compliance
+langchain-groq==0.2.1           # free tier, fast, Llama 3.3 70b supports tool calling
+langchain-google-genai==2.0.4   # free tier, Gemini 2.0 Flash supports tool calling
+
+faiss-cpu==1.8.0.post1
+sentence-transformers==3.1.1
+numpy==1.26.4

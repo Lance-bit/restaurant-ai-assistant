@@ -1,0 +1,65 @@
+============================================================
+RAG AGENT QUERIES
+============================================================
+
+--- Do you have vegan pasta? ---
+agent_used: rag
+grounded:   True
+sources:    ['menu:Vegan Pasta Primavera', 'menu:Classic Beef Lasagna', 'menu:Vegan Lentil Soup', 'menu:Truffle Mushroom Risotto']
+answer:     Yes, we have Vegan Pasta Primavera, available at Downtown, Maadi, and New Cairo branches, priced at 145 EGP.
+
+--- Is the chicken grilled or fried? ---
+agent_used: rag
+grounded:   True
+sources:    ['menu:Chicken Fattah', 'menu:Grilled Chicken Shawarma Plate', 'menu:Crispy Fried Chicken Burger', 'menu:Grilled Seabass with Lemon Butter']
+answer:     The Chicken Fattah and Grilled Chicken Shawarma Plate have grilled chicken, while the Crispy Fried Chicken Burger has fried chicken.
+
+--- What are your opening hours on weekends? ---
+agent_used: rag
+grounded:   True
+sources:    ['policy:Weekend Opening Hours', 'policy:Weekday Opening Hours', 'policy:Premium Catering Package', 'policy:Birthday and Private Events']
+answer:     On Fridays and Saturdays, all branches are open from 12:00 PM to 1:00 AM.
+
+--- Do you host birthday events? ---
+agent_used: rag
+grounded:   True
+sources:    ['policy:Birthday and Private Events', 'policy:Premium Catering Package']
+answer:     We host birthday events at the Maadi and New Cairo branches only, with a minimum of 10 guests and at least 48 hours notice.
+
+--- What's included in the premium catering package? ---
+agent_used: rag
+grounded:   True
+sources:    ['policy:Premium Catering Package', 'menu:Chicken Fattah', 'menu:Grilled Seabass with Lemon Butter', 'menu:Grilled Chicken Shawarma Plate']
+answer:     The premium catering package includes a 5-course set menu, a dedicated waiter, table decoration, and a complimentary birthday cake for groups of 10 or more. It does not include alcoholic beverages.
+
+============================================================
+OPERATIONS AGENT QUERIES
+============================================================
+
+--- Do you have a table for 2 at the Maadi branch tomorrow at 8pm? ---
+agent_used: operations
+grounded:   True
+sources:    ['tool:check_table_availability', 'tool:check_table_availability']
+answer:     Yes, there are 4 tables available for 2 people at the Maadi branch tomorrow at 8pm. Would you like to book one?
+
+--- What's today's special at Downtown? ---
+agent_used: operations
+grounded:   True
+sources:    ['tool:get_today_special']
+answer:     Today's special at the Downtown branch is Grilled Seabass with Lemon Butter.
+
+============================================================
+MEMORY CONTINUITY DEMO (same session_id across turns)
+============================================================
+
+--- Do you have vegan pasta? ---
+agent_used: rag
+grounded:   True
+sources:    ['menu:Vegan Pasta Primavera', 'menu:Classic Beef Lasagna', 'menu:Vegan Lentil Soup', 'menu:Truffle Mushroom Risotto']
+answer:     Yes, we have Vegan Pasta Primavera, available at Downtown, Maadi, and New Cairo branches, priced at 145 EGP.
+
+--- Is it gluten-free too? ---
+agent_used: rag
+grounded:   True
+sources:    ['menu:Vegan Pasta Primavera', 'menu:Classic Beef Lasagna', 'menu:Vegan Lentil Soup', 'menu:Truffle Mushroom Risotto']
+answer:     No, the Vegan Pasta Primavera contains gluten due to the penne pasta.

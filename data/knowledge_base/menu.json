@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "name": "Grilled Chicken Shawarma Plate",
+      "description": "Marinated chicken thigh grilled over charcoal, served with garlic sauce, pickles, and rice.",
+      "ingredients": ["chicken thigh", "garlic sauce", "pickles", "rice"],
+      "cooking_method": "grilled",
+      "dietary_tags": ["gluten-free option available"],
+      "allergens": ["dairy (in garlic sauce)"],
+      "price": 185,
+      "branches": ["Downtown", "Maadi", "New Cairo"]
+    },
+    {
+      "name": "Crispy Fried Chicken Burger",
+      "description": "Buttermilk-fried chicken breast, slaw, and spicy mayo in a brioche bun.",
+      "ingredients": ["chicken breast", "brioche bun", "slaw", "spicy mayo"],
+      "cooking_method": "fried",
+      "dietary_tags": [],
+      "allergens": ["gluten", "egg", "dairy"],
+      "price": 165,
+      "branches": ["Downtown", "New Cairo"]
+    },
+    {
+      "name": "Vegan Pasta Primavera",
+      "description": "Penne tossed with seasonal roasted vegetables in a olive-oil and herb sauce, no animal products.",
+      "ingredients": ["penne pasta", "zucchini", "bell peppers", "cherry tomatoes", "olive oil", "basil"],
+      "cooking_method": "sauteed",
+      "dietary_tags": ["vegan", "vegetarian"],
+      "allergens": ["gluten"],
+      "price": 145,
+      "branches": ["Downtown", "Maadi", "New Cairo"]
+    },
+    {
+      "name": "Classic Beef Lasagna",
+      "description": "Layered pasta with slow-cooked beef ragu, bechamel, and mozzarella, oven-baked.",
+      "ingredients": ["beef", "pasta sheets", "bechamel", "mozzarella", "tomato sauce"],
+      "cooking_method": "baked",
+      "dietary_tags": [],
+      "allergens": ["gluten", "dairy"],
+      "price": 195,
+      "branches": ["Maadi", "New Cairo"]
+    },
+    {
+      "name": "Grilled Seabass with Lemon Butter",
+      "description": "Whole seabass fillet grilled and finished with a lemon butter sauce, served with sauteed greens.",
+      "ingredients": ["seabass", "butter", "lemon", "seasonal greens"],
+      "cooking_method": "grilled",
+      "dietary_tags": ["gluten-free"],
+      "allergens": ["fish", "dairy"],
+      "price": 260,
+      "branches": ["Downtown"]
+    },
+    {
+      "name": "Truffle Mushroom Risotto",
+      "description": "Creamy arborio rice slow-cooked with wild mushrooms and finished with truffle oil.",
+      "ingredients": ["arborio rice", "wild mushrooms", "parmesan", "truffle oil", "vegetable stock"],
+      "cooking_method": "simmered",
+      "dietary_tags": ["vegetarian", "gluten-free"],
+      "allergens": ["dairy"],
+      "price": 210,
+      "branches": ["New Cairo"]
+    },
+    {
+      "name": "Chicken Fattah",
+      "description": "Traditional Egyptian dish of crispy bread, rice, garlic-vinegar sauce, and grilled chicken.",
+      "ingredients": ["chicken", "rice", "toasted bread", "garlic", "vinegar"],
+      "cooking_method": "grilled",
+      "dietary_tags": [],
+      "allergens": ["gluten"],
+      "price": 175,
+      "branches": ["Maadi"]
+    },
+    {
+      "name": "Vegan Lentil Soup",
+      "description": "Slow-simmered red lentils with cumin, onion, and a touch of lemon, no dairy or meat.",
+      "ingredients": ["red lentils", "onion", "cumin", "lemon", "vegetable stock"],
+      "cooking_method": "simmered",
+      "dietary_tags": ["vegan", "vegetarian", "gluten-free"],
+      "allergens": [],
+      "price": 95,
+      "branches": ["Downtown", "Maadi", "New Cairo"]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "sections": [
+    {
+      "title": "Weekday Opening Hours",
+      "content": "All branches (Downtown, Maadi, New Cairo) are open Sunday to Thursday from 12:00 PM to 11:00 PM.",
+      "branches": ["all"]
+    },
+    {
+      "title": "Weekend Opening Hours",
+      "content": "On Friday and Saturday, all branches extend their hours and are open from 12:00 PM to 1:00 AM.",
+      "branches": ["all"]
+    },
+    {
+      "title": "Birthday and Private Events",
+      "content": "We host birthday events and small private gatherings at the Maadi and New Cairo branches only. Bookings require at least 48 hours notice and a minimum of 10 guests. A dedicated event coordinator will contact you after booking.",
+      "branches": ["Maadi", "New Cairo"]
+    },
+    {
+      "title": "Premium Catering Package",
+      "content": "The premium catering package includes a 5-course set menu, a dedicated waiter, table decoration, and a complimentary birthday cake for groups of 10 or more. It does not include alcoholic beverages. Price is quoted per guest count at time of booking.",
+      "branches": ["Maadi", "New Cairo"]
+    },
+    {
+      "title": "Refund Policy",
+      "content": "Refunds for pre-paid reservations are issued in full if cancelled at least 24 hours before the reservation time. Cancellations within 24 hours are refunded at 50%. No-shows are not eligible for a refund.",
+      "branches": ["all"]
+    },
+    {
+      "title": "Loyalty Program Overview",
+      "content": "Customers earn 1 loyalty point for every 10 EGP spent. Points can be redeemed at any branch starting from 500 points, equal to a 100 EGP discount on the next visit.",
+      "branches": ["all"]
+    }
+  ]
+}
